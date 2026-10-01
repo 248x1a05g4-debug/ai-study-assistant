@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Study Assistant</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;color:#172033;background:#f7f9fc;line-height:1.6}
+nav{background:#fff;padding:18px 7%;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 12px #00000010;position:sticky;top:0;z-index:5}
+.logo{font-size:22px;font-weight:700;color:#315bea}
+nav a{text-decoration:none;color:#39445a;margin-left:22px}
+.btn{display:inline-block;background:#315bea;color:white;padding:12px 22px;border-radius:9px;text-decoration:none;font-weight:600}
+.hero{padding:85px 8%;display:flex;gap:50px;align-items:center;justify-content:space-between;background:linear-gradient(135deg,#eef3ff,#fff)}
+.hero-text{max-width:650px}
+.badge{display:inline-block;background:#e5ebff;color:#315bea;padding:7px 13px;border-radius:20px;font-size:14px;font-weight:bold;margin-bottom:18px}
+h1{font-size:52px;line-height:1.1;margin-bottom:20px}
+.hero p{font-size:19px;color:#59657a;margin-bottom:28px}
+.hero-card{background:#fff;padding:30px;border-radius:24px;box-shadow:0 15px 45px #315bea25;width:330px;text-align:center}
+.robot{font-size:90px;margin-bottom:12px}
+section{padding:65px 8%}
+.section-title{text-align:center;font-size:34px;margin-bottom:12px}
+.section-sub{text-align:center;color:#687386;max-width:700px;margin:0 auto 38px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:#fff;padding:28px;border-radius:16px;box-shadow:0 5px 20px #0000000c}
+.icon{font-size:32px;margin-bottom:12px}
+.card h3{margin-bottom:8px}
+.card p{color:#687386}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.step{text-align:center;padding:25px}
+.num{width:45px;height:45px;border-radius:50%;background:#315bea;color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 15px;font-weight:bold}
+.cta{background:#315bea;color:#fff;text-align:center;padding:65px 8%}
+.cta p{margin:12px auto 25px;max-width:650px}
+.cta .btn{background:#fff;color:#315bea}
+footer{text-align:center;padding:25px;color:#738096;background:#fff}
+@media(max-width:800px){.hero{flex-direction:column;text-align:center}.hero-card{width:100%;max-width:330px}h1{font-size:40px}.cards,.steps{grid-template-columns:1fr}nav{padding:15px 5%}nav .links{display:none}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">🤖 AI Study Assistant</div>
+  <div class="links"><a href="#features">Features</a><a href="#how">How It Works</a><a href="#about">About</a><a class="btn" href="#start">Get Started</a></div>
+</nav>
+
+<header class="hero">
+  <div class="hero-text">
+    <span class="badge">AI-Powered Learning Support</span>
+    <h1>Learn Smarter, Understand Better.</h1>
+    <p>AI Study Assistant helps CSE learners understand complex concepts, practice effectively, and get guidance for real-world projects — all in one place.</p>
+    <a class="btn" href="#start">Try AI Study Assistant</a>
+  </div>
+  <div class="hero-card">
+    <div class="robot">🤖</div>
+    <h2>Your Personal AI Study Partner</h2>
+    <p>Ask questions • Learn • Practice • Build</p>
+  </div>
+</header>
+
+<section id="about">
+  <h2 class="section-title">The Problem</h2>
+  <p class="section-sub">Complex computer science concepts can be difficult to understand and apply without practical guidance and personalized support.</p>
+  <div class="cards">
+    <div class="card"><div class="icon">📚</div><h3>Complex Concepts</h3><p>Technical topics can be difficult to understand from textbooks alone.</p></div>
+    <div class="card"><div class="icon">🧩</div><h3>Limited Practice</h3><p>There is often a gap between theoretical knowledge and practical application.</p></div>
+    <div class="card"><div class="icon">⏱️</div><h3>Time-Consuming Search</h3><p>Finding useful explanations and resources across many platforms takes time.</p></div>
+  </div>
+</section>
+
+<section id="features">
+  <h2 class="section-title">Our Solution</h2>
+  <p class="section-sub">One simple AI-powered assistant designed to make learning clearer, faster, and more practical.</p>
+  <div class="cards">
+    <div class="card"><div class="icon">💡</div><h3>Simple Explanations</h3><p>Understand difficult CSE topics in easy language with step-by-step explanations.</p></div>
+    <div class="card"><div class="icon">🚀</div><h3>Project Guidance</h3><p>Get ideas, guidance, and practical support while building academic projects.</p></div>
+    <div class="card"><div class="icon">📝</div><h3>Practice Questions</h3><p>Prepare with quizzes and practice questions to strengthen your understanding.</p></div>
+    <div class="card"><div class="icon">🎯</div><h3>Personalized Support</h3><p>Get learning help based on your topic, level, and study needs.</p></div>
+    <div class="card"><div class="icon">⚡</div><h3>Instant Answers</h3><p>Ask questions and receive focused learning support whenever you need it.</p></div>
+    <div class="card"><div class="icon">📈</div><h3>Learn at Your Pace</h3><p>Study anytime and revisit explanations whenever needed.</p></div>
+  </div>
+</section>
+
+<section id="how">
+  <h2 class="section-title">How It Works</h2>
+  <p class="section-sub">Three simple steps to improve your learning experience.</p>
+  <div class="steps">
+    <div class="step"><div class="num">1</div><h3>Ask</h3><p>Enter a concept, question, or project problem.</p></div>
+    <div class="step"><div class="num">2</div><h3>Get Guidance</h3><p>Receive simple explanations, examples, and practical guidance.</p></div>
+    <div class="step"><div class="num">3</div><h3>Learn & Grow</h3><p>Practice, apply your knowledge, and build confidence.</p></div>
+  </div>
+</section>
+
+<section class="cta" id="start">
+  <h2>Ready to Make Learning Simpler?</h2>
+  <p>Start using AI Study Assistant to understand concepts, practice better, and get practical project guidance.</p>
+  <a class="btn" href="mailto:your-email@example.com">Get Started Today</a>
+</section>
+
+<footer>
+  © 2026 AI Study Assistant • Learn Smarter, Understand Better
+</footer>
+</body>
+</html>
